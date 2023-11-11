@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockly Page</title>
+    
+</head>
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+
+<body>
+
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+    
+</body>
+
+<script>
+    
+
+    const toolbox = {
+  "kind": "flyoutToolbox",
+  "contents": [
+    {
+      "kind": "block",
+      "type": "controls_if"
+    },
+    {
+      "kind": "block",
+      "type": "controls_repeat_ext"
+    },
+    {
+      "kind": "block",
+      "type": "logic_compare"
+    },
+    {
+      "kind": "block",
+      "type": "math_number"
+    },
+    {
+      "kind": "block",
+      "type": "math_arithmetic"
+    },
+    {
+      "kind": "block",
+      "type": "text"
+    },
+    {
+      "kind": "block",
+      "type": "text_print"
+    },
+  ]
+}
+
+const workspace = Blockly.inject('blocklyDiv', {toolbox: toolbox});
+</script>
+
+</html>
